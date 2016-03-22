@@ -8,6 +8,9 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Simplest implementation of a Kafka msg producer - writes String-String pairs to a test topic.
+ */
 public class SimpleProducer {
 
   private static final Logger LOG = LoggerFactory.getLogger(SimpleProducer.class);

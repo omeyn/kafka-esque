@@ -9,10 +9,13 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Simplest implementation of a Kafka msg consumer - reads the String-String pairs created by SimpleProducer.
+ */
 public class SimpleConsumer {
 
   private static final Logger LOG = LoggerFactory.getLogger(SimpleConsumer.class);
-  private static final int MAX_READ = 10000000;
+  private static final int MAX_READ = 1000000000;
   private static final int LOG_INTERVAL = 1000000;
 
   public static void main(String[] args) {
